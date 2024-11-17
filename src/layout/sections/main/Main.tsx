@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import mainPhoto from "../../../assets/images/mainImg.webp";
+import mainImg from "../../../assets/images/mainImg.webp";
 import { Button } from "../../../components/Button";
 
 export const Main = () => {
@@ -17,7 +17,7 @@ export const Main = () => {
           <Button>Send Email</Button>
         </MainTextWrapper>
 
-        <Photo src={mainPhoto} />
+        <Photo src={mainImg} />
       </FlexWrapper>
     </StyledMain>
   );

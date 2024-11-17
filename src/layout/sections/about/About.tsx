@@ -43,6 +43,7 @@ const StyledAbout = styled.section`
   min-height: 100vh;
   max-width: 1058px;
   margin: 0 auto;
+  background-color: #6e6ed9;
 `;
 
 const Photo = styled.img`
