@@ -21,9 +21,12 @@ export const DirectionsProjects = (props: DirectionProjectsPropsType) => {
 };
 
 const StyledDirectionProjects = styled.div`
-  padding: 100px 0;
+  padding: 50px 0;
 `;
 
 const ProjectSubtitle = styled.h3``;
 
-const ProjectTitle = styled.h2``;
+const ProjectTitle = styled.h2`
+  max-width: 380px;
+  text-align: left;
+`;
