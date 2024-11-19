@@ -25,30 +25,40 @@ export const Service = () => {
           title={"Responsive Design"}
         />
       </FlexWrapper>
-      <FlexWrapper align={"center"} justify={"space-around"}>
-        <DirectionsProjects
-          subtitle={"UX/UI design"}
-          title={"Implement UX design into live and user friendly "}
-          iconId={"arrow"}
-        />
-        <Photo src={proj1} />
-      </FlexWrapper>
-      <FlexWrapper align={"center"} justify={"space-around"}>
-        <DirectionsProjects
-          subtitle={"Front end development"}
-          title={"Implement UX design into live and user friendly "}
-          iconId={"arrow"}
-        />
-        <Photo src={proj2} />
-      </FlexWrapper>
-      <FlexWrapper align={"center"} justify={"space-around"}>
-        <DirectionsProjects
-          subtitle={"Responsive design"}
-          title={"I build landing pages and responsive websites and web App"}
-          iconId={"arrow"}
-        />
-        <Photo src={proj3} />
-      </FlexWrapper>
+      <StyledProjects>
+        <FlexWrapper
+          direction={"column"}
+          justify={"space-between"}
+          align={"center"}
+        >
+          <FlexWrapper>
+            <DirectionsProjects
+              subtitle={"UX/UI design"}
+              title={"Implement UX design into live and user friendly "}
+              iconId={"arrow"}
+            />
+            <Photo src={proj1} />
+          </FlexWrapper>
+          <FlexWrapper>
+            <DirectionsProjects
+              subtitle={"Front end development"}
+              title={"Implement UX design into live and user friendly "}
+              iconId={"arrow"}
+            />
+            <Photo src={proj2} />
+          </FlexWrapper>
+          <FlexWrapper>
+            <DirectionsProjects
+              subtitle={"Responsive design"}
+              title={
+                "I build landing pages and responsive websites and web App"
+              }
+              iconId={"arrow"}
+            />
+            <Photo src={proj3} />
+          </FlexWrapper>
+        </FlexWrapper>
+      </StyledProjects>
     </StyledService>
   );
 };
@@ -57,6 +67,10 @@ const StyledService = styled.section`
   min-height: 100vh;
   background-color: #cdcd82;
   text-align: center;
+`;
+
+const StyledProjects = styled.div`
+  margin: 50px 0 0 0;
 `;
 
 const Photo = styled.img`
